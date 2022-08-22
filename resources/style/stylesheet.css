@@ -1,0 +1,36 @@
+/* Website fonts */
+@import url('https://fonts.googleapis.com/css2?family=Biryani&family=Calistoga&display=swap');
+
+body{
+    margin:0;
+    background-color: #F5F5F5;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    margin: 1em;
+}
+
+.nav{
+    font-family: Calistoga, cursive;
+    font-size: 20px;
+    display: flex;
+    flex: 1;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 1em;
+    background-color: pink;
+    /* remove BG color later */
+    
+}
+
+.nav a{
+    text-decoration: none;
+    color: #121113;
+}
+
+
+
