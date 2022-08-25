@@ -81,6 +81,14 @@ header {
     margin: 1em;
 }
 
+/* FOOTER */
+
+footer{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+
+}
+
 /* LANDING IMAGE */
 .landing-image{
     height: 110vh;
