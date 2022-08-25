@@ -52,7 +52,7 @@ header {
 /* LANDING IMAGE */
 .landing-image {
   height: 110vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.275)), url("../images/backestate-restaurant.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.164), rgba(0, 0, 0, 0.275)), url("../images/backestate-restaurant.jpg");
   background-size: cover;
   background-position: top right;
   position: relative;
@@ -75,7 +75,7 @@ header {
   font-size: 1.3em;
   font-family: "Calistoga", cursive;
   color: #F5F5F5;
-  border: 3px solid #F5F5F5;
+  border: 3px solid #F1F5F2;
   width: 150px;
   height: 150px;
   border-radius: 50%;
@@ -99,14 +99,14 @@ header {
 /* VINEYARD SECTION */
 .heading-light {
   font-family: "Calistoga", cursive;
-  font-size: 2em;
+  font-size: 2.3em;
   color: #F1F5F2;
   text-align: center;
 }
 
-.vineyards {
+.vineyards-wrapper {
   display: flex;
-  justify-content: center;
+  margin: 2em;
 }
 
 .vineyard-card {
@@ -117,9 +117,11 @@ header {
 
 .vineyard-card img {
   display: block;
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   margin: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .vineyard-card a {
@@ -127,4 +129,90 @@ header {
   color: #F1F5F2;
   font-size: 1.3em;
   text-align: center;
+}
+
+/* VISIT SECTION */
+.two-columns {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 32px;
+}
+
+.visit-text {
+  margin: auto;
+  padding: 3em;
+}
+
+h2 {
+  font-family: "Calistoga", cursive;
+  font-size: 2.3em;
+  color: #14281D;
+}
+
+.visit-text > p {
+  font-family: "Biryani", sans-serif;
+  font-size: 1.3em;
+  color: #121113;
+  text-align: left;
+  padding-right: 2em;
+}
+
+.visit-image {
+  padding: 3em;
+  padding-right: 4em;
+  margin: auto;
+}
+
+.visit-image img {
+  max-width: 100%;
+}
+
+/* SHOP SECTION */
+.shop-wrapper {
+  display: flex;
+  margin: 2em;
+}
+
+.shop-card {
+  flex: 1;
+  justify-content: center;
+  align-content: center;
+}
+
+.shop-card img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 350px;
+  height: 350px;
+  margin: auto;
+}
+
+.shop-card a {
+  font-family: "Calistoga", cursive;
+  color: #F1F5F2;
+  font-size: 1.3em;
+  text-align: center;
+}
+
+/* MEMBER SECTION */
+.member-text {
+  margin: auto;
+  padding: 3em;
+}
+
+.member-text > p {
+  font-family: "Biryani", sans-serif;
+  font-size: 1.3em;
+  color: #121113;
+  text-align: left;
+}
+
+.member-image {
+  padding: 3em;
+  margin: auto;
+}
+
+.member-image img {
+  max-width: 100%;
 }/*# sourceMappingURL=style.css.map */
