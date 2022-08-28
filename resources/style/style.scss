@@ -16,7 +16,6 @@
     font-family: 'Calistoga', cursive;
     color:#F1F5F2;
     font-size: 1.3em;
-
 }
 
 @mixin body-text-dark{
@@ -24,8 +23,17 @@
     font-size: 1.3em;
     color: #121113;
     text-align: left;
+}
 
-
+@mixin button{
+    background-color: #C59407;
+    color: #F1F5F2;
+    border: 2px solid #9F7703;
+    border-radius: 25px;
+    font-family: 'Calistoga', cursive;
+    font-size: 1.3em;
+    padding: 0.5em 2em;
+    transition-duration: 0.4s;
 }
 
 /* Website fonts */
@@ -81,6 +89,15 @@ header {
     margin: 1em;
 }
 
+.nav a:hover {
+    border-bottom: 3px solid #121113;
+  }
+  
+  .nav a.active {
+    border-bottom: 3px solid #121113;
+  }
+
+
 /* FOOTER */
 
 footer{
@@ -90,13 +107,7 @@ footer{
 }
 
 .first-column{
-    padding-left: 1em;
     margin: auto;
-}
-
-.second-column .third-column{
-    margin: auto;
-
 }
 
 h6{
@@ -114,20 +125,64 @@ footer p{
 footer a{
     font-family: 'Calistoga', cursive;
     color:#F1F5F2;
+    margin: auto;
 }
 
 .second-column > h6{
     text-align: center;
 }
 
-.hours > h6{
-    margin: 0;
-    padding-top: 1em;
+h6{
+    margin: 0.5em 0;
 }
 
 .hours > p{
-    padding-bottom: 2em;
+    padding-bottom: 0.3em;
 }
+
+.second-column{
+    margin: auto;
+}
+
+.input{
+    margin: 0.5em;
+    padding: 0.5em;
+}
+
+.email{
+    width: 100%;
+}
+
+.name{
+    width: 40%;
+}
+
+.newsletter{
+    text-align: center;
+    padding: 1em;;
+}
+
+.third-column{
+    margin: auto;
+}
+
+.third-column > a{
+    padding: 0.5em;
+}
+
+.contact{
+    padding: 0.5em;
+}
+
+/* BUTTON */
+.button{
+    @include button();
+}
+
+.button:hover {
+    background-color: #9F7703;
+}
+
 
 /* LANDING IMAGE */
 .landing-image{
@@ -174,7 +229,6 @@ footer a{
     font-size: 40px;
     color:#F1F5F2;;
     margin-left: 1em;
-
 }
 
 /* VINEYARD SECTION */
@@ -281,7 +335,7 @@ h2{
 }
 
 .member-image img{
-    max-width: 100%;
+    width: 100%;
 }
 
 
