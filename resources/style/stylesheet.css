@@ -1,121 +1,73 @@
 /* Website fonts */
 @import url('https://fonts.googleapis.com/css2?family=Biryani&family=Calistoga&display=swap');
 
-/* RESET AND BACKGROUND */
+/* BACKGROUND */
 body{
-    margin: 0;
     background-color: #14281D;
 }
 
-/* NAVIGATION HEADER */
-header {
-    display: flex;
-    justify-content: space-around;
-    position: fixed;
-    z-index: 9000;
-    top: 0;
-    right: 0;
-    left: 0;
-    padding: 10px;
-    box-sizing: border-box;  
-    height: 7em;
+.light-background{
     background-color: #F1F5F2;
 }
 
-.nav{
-    font-family: 'Calistoga', cursive;
-    font-size: 18px;
-    display: flex;
-    flex: 1;
-    list-style: none;
-    justify-content: center;
-    align-items: center;
-    gap: 2em;
-}
-
-.nav a{
-    text-decoration: none;
-    color: #121113;
-}
-
-.icons{
-    display: flex;
-}
-
-.icons img{
-    margin: 1em;
-}
-
-/* LANDING IMAGE */
-.landing-image{
-    height: 110vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.05),rgba(0, 0, 0, 0.275)) ,url("../images/backestate-restaurant.jpg");
-    background-size: cover;
-    background-position: top right;
-    position: relative;
-    display: flex;
-    align-items: center;
-}
-
-.landing-text {
-    position: absolute;
-    bottom: 15px;
-    left: 30px;
-    display: inherit;
-    align-items: flex-end;
-    margin: 0.5em;
-    align-content: center;
-    justify-content: center; 
-}
-
-.wine-maker{
+/* BUTTON */
+.button{
+    background-color: #C59407;
+    color: #F1F5F2;
+    border: 2px solid #9F7703;
+    border-radius: 15px;
+    font-family: 'Biryani', sans-serif;
     font-size: 1.3em;
-    font-family: 'Calistoga', cursive;
-    color:#F5F5F5;
-    border: 3px solid #F5F5F5;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background-color: #00000050;
-    padding: 0.5em;
-    display: flex;
+    transition-duration: 0.4s;
     text-align: center;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    flex: 0 0 auto;
+    vertical-align: middle;
 }
 
-.landing-text > h1 {
-    font-family: 'Calistoga', cursive;
-    font-size: 40px;
-    color:#F1F5F2;;
-    margin-left: 1em;
-
+.button:hover {
+    background-color: #9F7703;
 }
 
-/* VINEYARD SECTION */
+/* VISIT AND MEMBER SECTION */
 
-
-.vineyards{
+.two-columns{
     display: flex;
+    flex-wrap: wrap;
 }
 
-.vineyard-card{
+.text-wrapper{
     flex: 1;
-    margin: 2em;
-    align-items: center;
-    justify-content: center;
+    margin: auto;
+    padding: 2em;
 }
 
-.vineyard-card img{
-    width: 300px;
-    height: 300px;
+.text-wrapper > h2{
+    font-family: 'Calistoga', cursive;
+    font-size: 2.3em;
+    color: #14281D;
 }
 
-.vineyard-card a{
-    justify-content: center;
-    text-decoration: none;
-    color:#F1F5F2;
+.text-wrapper > p{
+    font-family: 'Biryani', sans-serif;
+    font-size: 1.3em;
+    color: #121113;
+    text-align: left;
 }
 
+.flex-button{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.image-wrapper{
+    flex: 1;
+    margin: auto;
+    padding: 2em;
+}
+
+.image-wrapper img{
+    max-width: 100%;
+}
+
+.reverse{
+    flex-direction: row-reverse;
+}
