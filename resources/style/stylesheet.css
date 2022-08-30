@@ -58,6 +58,58 @@ nav{
     border-bottom: 3px solid #121113;
 }
 
+/* VISIT AND MEMBER SECTION */
+
+.two-columns{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.two-column-child{
+    flex: 1;
+    margin: 5px;
+}
+
+.text-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 400px;
+}
+
+.text-wrapper *{
+    margin: 0 50px;
+}
+
+.text-wrapper > h2{
+    @include heading-dark();
+}
+
+.text-wrapper > p{
+    @include body-text-dark();
+}
+
+.flex-button{
+    display: flex;
+    justify-content:right;
+}
+
+.image-wrapper{
+    max-height: 500px;
+}
+
+.image-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.reverse{
+    flex-direction: row-reverse;
+}
+
+
 
 @media screen and (max-width: 1120px) {
     /* MOBILE AND TABLET MENU */
@@ -66,7 +118,6 @@ nav{
     }
 
     .responsive-nav{
-        /* position: fixed; */
         background-color: #F1F5F2;
         display: flex;
         justify-content: space-between;
@@ -156,10 +207,6 @@ nav{
         transform: rotate(-45deg) translate(0, -1px);
     }
 
-    /*
-    * Make this absolute positioned
-    * at the top left of the screen
-    */
     #menu{
     position: absolute;
     width: 300px;
@@ -180,11 +227,18 @@ nav{
         font-size: 22px;
     }
 
-    /*
-    * And let's slide it in from the left
-    */
     #menuToggle input:checked ~ ul    {
         transform: none;
     }
+
+}
+@media (max-width:765px){
+    .two-columns{
+        flex-direction: column;
+    }
+    .img-wrapper{
+        overflow: hidden;
+    }
+
 }
 

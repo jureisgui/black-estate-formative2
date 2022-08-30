@@ -526,6 +526,10 @@ h6{
     padding-right: 1em;
 }
 
+.footer-mobile{
+    display: none;
+}
+
 /* BUTTON */
 .button{
     @include button();
@@ -611,16 +615,25 @@ h6{
 }
 
 /* VISIT AND MEMBER SECTION */
-
 .two-columns{
+    margin: auto;
     display: flex;
-    flex-wrap:wrap;
+}
+
+.two-column-child{
+    flex: 1;
+    margin: 2em;
 }
 
 .text-wrapper{
-    flex: 1;
-    margin: auto;
-    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 400px;
+}
+
+.text-wrapper *{
+    margin: 0 50px;
 }
 
 .text-wrapper > h2{
@@ -637,19 +650,57 @@ h6{
 }
 
 .image-wrapper{
-    flex: 1;
-    margin: auto;
-    padding: 2em;
+    max-height: 500px;
 }
 
 .image-wrapper img{
     width: 100%;
     height: 100%;
+    object-fit: contain;
 }
 
 .reverse{
     flex-direction: row-reverse;
 }
+
+// .two-columns{
+//     display: flex;
+//     flex-wrap:wrap;
+// }
+
+// .text-wrapper{
+//     flex: 1;
+//     margin: auto;
+//     padding: 2em;
+// }
+
+// .text-wrapper > h2{
+//     @include heading-dark();
+// }
+
+// .text-wrapper > p{
+//     @include body-text-dark();
+// }
+
+// .flex-button{
+//     display: flex;
+//     justify-content:right;
+// }
+
+// .image-wrapper{
+//     flex: 1;
+//     margin: auto;
+//     padding: 2em;
+// }
+
+// .image-wrapper img{
+//     width: 100%;
+//     height: 100%;
+// }
+
+// .reverse{
+//     flex-direction: row-reverse;
+// }
 
 /* SHOP SECTION */
 .shop-wrapper{
@@ -678,7 +729,6 @@ h6{
 }
 
 /* VINEYARD LANDING */
-
 .vineyards-landing{
     height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.164),rgba(0, 0, 0, 0.275)) ,url("../images/vineyards.jpg");
@@ -699,8 +749,21 @@ h6{
 }
 
 @media screen and (max-width: 1120px) {
+  /* FONTS */
+  h1{
+    font-size: 24px;
+  }
+
+  h2{
+    font-size: 20px;
+  }
+  
+  p{
+    font-size: 16px;
+  }
+
     /* MOBILE AND TABLET MENU */
-    header{
+  header{
       display: none;
   }
 
@@ -794,10 +857,6 @@ h6{
       transform: rotate(-45deg) translate(0, -1px);
   }
 
-  /*
-  * Make this absolute positioned
-  * at the top left of the screen
-  */
   #menu{
     position: absolute;
     width: 300px;
@@ -818,17 +877,69 @@ h6{
       font-size: 22px;
   }
 
-  /*
-  * And let's slide it in from the left
-  */
   #menuToggle input:checked ~ ul    {
       transform: none;
   }
 
-    /* RESPONSIVENESS */
+  // MOBILE AND TABLET FOOTER
+
+  footer{
+    display: none;
+  }
+
+  .footer-mobile{
+    display: block;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    // grid-gap: 2px;
+    grid-template-areas: 
+    "links social-media"
+    "licence licence";
+    margin: 1em;
+}
+
+.links{
+    grid-area: links;
+    font-family: 'Calistoga', cursive;
+    font-size: 1em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: auto;    
+}
+
+.footer-mobile a{
+  color: #F1F5F2;
+}
+
+.social-media{
+    grid-area: social-media;
+    text-align: center;
+}
+.licence{
+    grid-area: licence;
+    font-family: 'Biryani', sans-serif;
+    text-align: center;
+}
+
+// LANDING PAGE SECTION
 
 
+  // TWO COLLUMNS RESPONSIVENESS
+  .two-columns{
+      flex-direction: column;
+  }
+  .two-column-child{
+    margin: 1em;
+  }
+
+  .img-wrapper{
+      overflow: hidden;
+  }
 
 }
+
+
+
   
 
