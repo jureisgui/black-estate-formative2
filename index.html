@@ -23,11 +23,12 @@
             <li><a href="membership.html">Membership</a></li>
             <li><a href="membership.html">Contact</a></li>
             <div class="icons">
-                <img src="./resources/images/member.png" alt="">
-                <img src="./resources/images/cart.png" alt="">
+                <img src="./resources/images/member.png" alt="Membership icon">
+                <img src="./resources/images/cart.png" alt="Shopping cart">
             </div>
         </ul>
     </header>
+
 
     <main class="landing-image">
         <div class="landing-text">
@@ -57,12 +58,14 @@
     </section>
 
     <section class="light-background two-columns">
-        <div class="visit-text">
+        <div class="text-wrapper">
             <h2>Come visit us!</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non non vel, ut sed blandit ultrices non nibh. Lorem ac dolor, varius massa congue vivamus quam fermentum. A volutpat aliquet arcu, viverra vitae sit pulvinar aenean. Turpis nibh est sed massa rhoncus, scelerisque sed consequat pulvinar.</p>           
-            <button class="button">Visit</button>
+            <div class="flex-button"> 
+                <button class="button">Visit</button>
+            </div>
         </div>
-        <div class="visit-image">
+        <div class="image-wrapper">
             <img src="./resources/images/visit-us.jpg" alt="">
         </div>
     </section>
@@ -89,14 +92,16 @@
         </div>
     </section>
 
-    <section class="light-background two-columns">
-        <div class="member-image">
-            <img src="./resources/images/become-member.jpg" alt="">
-        </div>
-        <div class="member-text">
+    <section class="light-background two-columns reverse">
+        <div class="text-wrapper">
             <h2>Become a member!</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non non vel, ut sed blandit ultrices non nibh. Lorem ac dolor, varius massa congue vivamus quam fermentum. A volutpat aliquet arcu, viverra vitae sit pulvinar aenean. Turpis nibh est sed massa rhoncus, scelerisque sed.</p>           
-            <button class="button">Join the club</button>
+            <div class="flex-button">   
+                <button class="button">Join the club</button>
+            </div>
+        </div>    
+        <div class="image-wrapper">
+            <img src="./resources/images/become-member.jpg" alt="">
         </div>
     </section>
 
@@ -124,7 +129,9 @@
                 <input class="input name" type="text" placeholder="Last Name" name="name" required>
                 <input class="input email" type="text" placeholder="Email address" name="mail" required>
             </div>
-            <button class="button">Join now</button>
+            <div class="footer-button">
+                <button class="button">Join now</button>
+            </div>
             <a href="license.html"><p>Black estate limited licence - Expiry 28 November 2023</p></a>
         </div>
         <div class="third-column">
@@ -135,15 +142,12 @@
                 <p>Address: 234 Rivers Road,</p> 
                 <p>Canterbury, New Zealand</p>
             </div>
-            <a href="shipping.html">Shipping</a>
-            <a href="distributors.html">Distributors</a>            
+            <div class="footer-links">
+                <a href="shipping.html">Shipping</a>
+                <a href="distributors.html">Distributors</a>
+            </div>            
         </div>
-
-
-
-
     </footer>
-
 
     
 </body>

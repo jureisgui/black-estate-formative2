@@ -438,14 +438,11 @@ header {
 
 .nav a:hover {
     border-bottom: 3px solid #121113;
-  }
+}
   
 .nav a.active {
     border-bottom: 3px solid #121113;
-  }
-
-/* MOBILE MENU */
-
+}
 
 /* FOOTER */
 footer{
@@ -488,6 +485,10 @@ h6{
     padding-bottom: 0.3em;
 }
 
+.media-icons img{
+    padding-right: 0.5em;
+}
+
 .second-column{
     margin: auto;
 }
@@ -496,7 +497,6 @@ h6{
     margin: 0.2em;
     padding: 0.5em;
 }
-
 
 .newsletter{
     display: grid;
@@ -508,16 +508,18 @@ h6{
     grid-column: span 2;
 }
 
-.second-column > button{
-    text-align: center;
+.footer-button{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1em;
 }
 
 .third-column{
     margin: auto;
 }
 
-.contact{
-    padding: 0.5em;
+.footer-links a{
+    padding-right: 1em;
 }
 
 /* BUTTON */
@@ -607,37 +609,48 @@ h6{
     text-align: center;
 }
 
-/* VISIT SECTION */
+/* VISIT AND MEMBER SECTION */
 
 .two-columns{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    // gap: 32px;
-    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.visit-text{
+.text-wrapper{
+    flex: 1;
     margin: auto;
-    padding: 3em;
+    padding: 2em;
+    align-items: center;
+    justify-content: center;
 }
 
-h2{
+.text-wrapper > h2{
     @include heading-dark();
 }
 
-.visit-text > p{
+.text-wrapper > p{
     @include body-text-dark();
-    padding-right: 2em;
 }
 
-.visit-image{
-    padding: 3em;
-    padding-right: 4em;
+.flex-button{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.image-wrapper{
+    flex: 1;
     margin: auto;
+    padding: 2em;
+    align-items: center;
+    justify-content: center;
 }
 
-.visit-image img{
+.image-wrapper img{
     max-width: 100%;
+}
+
+.reverse{
+    flex-direction: row-reverse;
 }
 
 /* SHOP SECTION */
@@ -666,32 +679,51 @@ h2{
     text-align: center;
 }
 
-/* MEMBER SECTION */
+/* VINEYARD LANDING */
 
-.member-text{
-    margin: auto;
-    padding: 3em;
+.vineyards-landing{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.164),rgba(0, 0, 0, 0.275)) ,url("../images/vineyards.jpg");
+    background-size: cover;
+    background-position: top right;
+    position: relative;
+    display: flex;
+    align-items: center;
 }
 
-.member-text > p{
-    @include body-text-dark();
-}
-
-.member-image{
-    padding: 3em;
-    margin: auto;
-}
-
-.member-image img{
-    width: 100%;
+.vineyard-text-wrapper{
+    position: absolute;
+    display: inherit;
+    align-items: center;
+    // margin: 0.5em;
+    align-content: center;
+    justify-content: center; 
 }
 
 @media screen and (max-width: 1120px) {
-    .nav {
-        display: none;
+    /* MOBILE AND TABLET MENU */
+
+    /* FONTS */
+    h2{
+        font-size: 1.5em;
+    }
+
+    p{
+        font-size: 1em;
+    }
+
+    /* GRID RESPONSIVENESS */
+
+    .two-columns{
+        display: grid;
+        grid-template-columns: 1fr;
     }
 
 
-    
+
+
+
+
 }
+  
 
