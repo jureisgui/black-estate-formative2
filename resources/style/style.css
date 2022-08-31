@@ -665,6 +665,20 @@ h6 {
 
 .shop-menu li {
   padding: 1em;
+  font-family: "Calistoga", cursive;
+  font-size: 2.3em;
+  color: #F1F5F2;
+}
+
+.shop-menu a {
+  color: #F1F5F2;
+}
+
+.shop-blurb p {
+  margin: 0;
+  font-family: "Biryani", sans-serif;
+  font-size: 1.3em;
+  color: #F1F5F2;
 }
 
 @media screen and (max-width: 1120px) {
