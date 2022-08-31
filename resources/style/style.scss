@@ -373,6 +373,13 @@
     text-align: left;
 }
 
+@mixin body-text-light{
+  font-family: 'Biryani', sans-serif;
+  font-size: 1.3em;
+  color: #F1F5F2;
+  text-align: left;
+}
+
 @mixin button{
     background-color: #C59407;
     color: #F1F5F2;
@@ -750,6 +757,27 @@ h6{
 
 /* SHOP LAYOUT */
 
+.shop-landing-image{
+    height: 80vh;
+    background-image: url("../images/shop-landing.jpg");
+    background-size: cover;
+}
+
+.shop-menu-section{
+  margin: auto;
+  text-align: center;
+  list-style: none;
+}
+
+.shop-menu{
+  display: flex;
+  margin: auto; 
+  justify-content: center;
+}
+
+.shop-menu li{
+  padding: 1em;;
+}
 
 
 @media screen and (max-width: 1120px) {
@@ -924,7 +952,7 @@ h6{
     grid-area: licence;
     font-family: 'Biryani', sans-serif;
     text-align: center;
-}
+    }
 
 // LANDING PAGE SECTION
 
@@ -940,10 +968,4 @@ h6{
   .img-wrapper{
       overflow: hidden;
   }
-
 }
-
-
-
-  
-
