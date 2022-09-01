@@ -351,12 +351,14 @@
 @mixin heading-light {
     font-family: 'Calistoga', cursive;
     font-size: 2.3em;
+    font-weight: 400;
     color: #F1F5F2;
 }
 
 @mixin heading-dark {
     font-family: 'Calistoga', cursive;
     font-size: 2.3em;
+    font-weight: 400;
     color: #14281D;
 }
 
@@ -383,6 +385,7 @@
 @mixin button{
   background-color: #C59407;
   color: #F1F5F2;
+  border-color: #C59407;
   border-radius: 6px;
   font-family: 'Calistoga', cursive;
   font-size: 1.1em;
@@ -521,7 +524,7 @@ h6{
 .newsletter > input{
     margin: 0.2em;
     padding: 0.5em;
-    border-radius: 10px;
+    border-radius: 6px;
 }
 
 .newsletter{
@@ -772,8 +775,8 @@ h6{
 }
 
 .wine-shop-image{
-  width: 110px;
-  height: 245px;
+  width: 120px;
+  height: 265px;
   object-fit: contain;
   margin: auto;
 }
@@ -820,14 +823,14 @@ h3{
  input#quantity{
   width: 40px;
   height: 30px;
-  border-radius: 10px;  
+  border-radius: 6px;  
 }
 
 input#quantity:hover{  
   border-color: #9F7703; 
 }
 
-// input#quantity:active{  
+// input#quantity:focus{  
 //   border-color: #9F7703; 
 // }
 
@@ -842,7 +845,6 @@ input#quantity:hover{
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-
 }
 
 .vineyard-text-wrapper{
@@ -850,9 +852,6 @@ input#quantity:hover{
   display: flex;
   flex-direction: column;
   text-align: center;
-  // align-items: center;
-  // align-content: center;
-  // justify-content: center; 
 }
 
 .vineyard-text-wrapper > h1{
@@ -865,10 +864,64 @@ input#quantity:hover{
   margin: 0.3em;
 }
 
-.vineyard-text-wrapper > h2{
-  @include heading-light();
+.vineyard-text-container{
+  margin: 4em;
+  text-align: center;
 }
 
+.vineyard-text-container h2{
+  @include heading-light();
+  text-align: center;  
+}
+.wines-from h4{
+  @include heading-light();
+  font-size: 1.6em;
+  font-weight: 400;
+  text-align: center;  
+}
+
+.wines-from-images h4{
+  font-family: 'Biryani', sans-serif;
+  color: #F1F5F2;
+  font-size: 1.1em;
+  margin: 0;
+
+}
+.wines-from-images{
+  display: flex;
+  justify-content: center;
+}
+
+.wines-from-images div{
+  margin: 1em;
+}
+
+.wines-from-images img{
+  max-width: 100px;
+  max-height: 200px;
+  background-color: #F1F5F2;
+  padding: 2em 4em;
+  border-radius: 6px;
+}
+
+.vineyard-text-container  p{
+  @include body-text-light();
+}
+
+.vineyard-text-container a{
+  @include body-text-light();
+  display: flex;
+  justify-content: flex-end;
+}
+
+.vineyard-image-container{
+  margin: 4em;
+  text-align: right;
+}
+
+.dark-text{
+  color:#14281D;
+}
 
 @media screen and (max-width: 1120px) {
   /* FONTS */
