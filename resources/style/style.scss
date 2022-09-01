@@ -381,18 +381,33 @@
 }
 
 @mixin button{
-    background-color: #C59407;
-    color: #F1F5F2;
-    border: 2px solid #9F7703;
-    border-radius: 15px;
-    font-family: 'Calistoga', cursive;
-    font-size: 1.3em;
-    padding: 0.5em 2em;
-    transition-duration: 0.4s;
+  background-color: #C59407;
+  color: #F1F5F2;
+  border: 2px solid #9F7703;
+  border-radius: 15px;
+  font-family: 'Calistoga', cursive;
+  font-size: 1.1em;
+  padding: 0.5em 2em;
+  transition-duration: 0.4s;
+
+  // display: block;
+  // background-color: #c59407;
+  // border: 0;
+  // color: #f1efef;
+  // font-family: "Calistoga";
+  // font-size: 14px;
+  // padding: 8px 18px;
+  // border-radius: 2em;
+  // margin-left: auto;
+  // min-width: 80px;
 }
 
 /* Website fonts */
 @import url('https://fonts.googleapis.com/css2?family=Biryani&family=Calistoga&display=swap');
+
+.heading-dark{
+  @include heading-dark();
+}
 
 
 /* BACKGROUND */
@@ -670,45 +685,6 @@ h6{
     flex-direction: row-reverse;
 }
 
-// .two-columns{
-//     display: flex;
-//     flex-wrap:wrap;
-// }
-
-// .text-wrapper{
-//     flex: 1;
-//     margin: auto;
-//     padding: 2em;
-// }
-
-// .text-wrapper > h2{
-//     @include heading-dark();
-// }
-
-// .text-wrapper > p{
-//     @include body-text-dark();
-// }
-
-// .flex-button{
-//     display: flex;
-//     justify-content:right;
-// }
-
-// .image-wrapper{
-//     flex: 1;
-//     margin: auto;
-//     padding: 2em;
-// }
-
-// .image-wrapper img{
-//     width: 100%;
-//     height: 100%;
-// }
-
-// .reverse{
-//     flex-direction: row-reverse;
-// }
-
 /* SHOP SECTION */
 .shop-wrapper{
     display: flex;
@@ -773,10 +749,11 @@ h6{
   display: flex;
   margin: auto; 
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .shop-menu li{
-  padding: 1em;
+  margin: 1em;
   @include heading-light();
 }
 
@@ -785,20 +762,89 @@ h6{
 }
 
 .shop-blurb p{
-  margin: 0;
+  margin: 1em;
   font-family: 'Biryani', sans-serif;
   font-size: 1.3em;
   color: #F1F5F2;
 }
 
+.wines-header{
+  text-align: center;
+  padding: 1em;
+}
 
-// .text-wrapper > h2{
-//   @include heading-dark();
-// }
+.wine-icons img{
+  margin: 0.5em;  
+}
 
-// .text-wrapper > p{
-//   @include body-text-dark();
-// }
+.shop-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2px; 
+  max-width: 1500px;
+  margin: auto;
+  }
+
+.shop-element{
+  margin: auto;
+  padding: 1em;
+}
+
+.wine-shop-image{
+  width: 300px;
+  height: 450px;
+  object-fit: contain;
+}
+
+.shop-image-wrapper{
+  display: flex;
+  align-items: flex-end;
+}
+
+.shop-image-wrapper img{
+  margin: 0;
+}
+
+.shop-text-wrapper{
+  margin: auto;
+  text-align: center;
+  padding: 0.5em;
+}
+
+h3{
+  font-family: 'Calistoga', cursive;
+  font-size: 1.3em;
+  color: #14281D;
+  margin: 0.2em;
+}
+ .shop-text-wrapper a{
+  font-family: 'Calistoga', cursive;
+  font-size: 1em;
+  color: #14281D;
+ }
+
+ label{
+  font-family: 'Biryani', sans-serif;
+  font-size: 1em;
+  color: #14281D;
+ }
+
+ input#quantity{
+  width: 40px;
+  height: 30px;
+  border-radius: 10px;
+  
+}
+
+input#quantity::hover{
+  width: 40px;
+  height: 30px;
+  border-radius: 10px;
+  
+}
+  
+
+
 
 @media screen and (max-width: 1120px) {
   /* FONTS */
