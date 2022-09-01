@@ -11,7 +11,7 @@
     <header>
         <ul class="nav">
             <li><a href="shop.html">Shop</a></li>
-            <li><a href="vineyards.html">Vineyards</a></li>
+            <li><a class="active" href="vineyards.html">Vineyards</a></li>
             <li><a href="visit.html">Visit</a></li>
             <li><a href="stay.html">Stay</a></li>
         </ul>
@@ -23,27 +23,62 @@
             <li><a href="membership.html">Membership</a></li>
             <li><a href="membership.html">Contact</a></li>
             <div class="icons">
-                <img src="./resources/images/member.png" alt="">
-                <img src="./resources/images/cart.png" alt="">
+                <img src="./resources/images/member.png" alt="Membership icon">
+                <img src="./resources/images/cart.png" alt="Shopping cart">
             </div>
         </ul>
     </header>
+    <!-- Mobile/Tablet nav -->
+    <div class="responsive-nav">
+        <nav>
+            <div id="menuToggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a class="active" href="vineyards.html">Vineyards</a></li>
+                    <li><a href="visit.html">Visit</a></li>
+                    <li><a href="stay.html">Stay</a></li>
+                    <li><a href="people.html">People</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="contact.html">Contact</a></li>                    
+                </ul>
+            </div>
+        </nav>
+        <div class="logo">
+            <a href="index.html"><img src="./resources/images/logo.png" alt="Black Estate logo"></a>           
+        </div>
+    </div>
 
     <main class="vineyards-landing">
         <div class="vineyard-text-wrapper">
-            <h1>Vineyards</h1>
+                <h1>Vineyards</h1>
             <div class="vineyard-landing-button">
                 <button class="button">Home</button>
                 <button class="button">Damsteep</button>
                 <button class="button">Netherwood</button>
-        </div>
+            </div>
         </div>
     </main>
 
+    <section class="two-columns">
+        <div class="vineyard-text-wrapper two-column-child">
+            <h2>Home</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non non vel, ut sed blandit ultrices non nibh. Lorem ac dolor, varius massa congue vivamus quam fermentum. A volutpat aliquet arcu, viverra vitae sit pulvinar aenean. Turpis nibh est sed massa rhoncus, scelerisque sed consequat pulvinar</p>           
+        </div>
+        <a href="soil.hmtl">View soil</a>
+        <div class="wines-from">
+            <h4>Wines from this vineyard</h4>
 
+        </div>    
+        <div class="vineyard-image-wrapper two-column-child">
+            <img src="./resources/images/" alt="">
+        </div>
+    </section>
 
-
-        <footer>
+    <footer>
         <div class="first-column">
             <div class="hours">
                 <h6>Cellar Door Hours:</h6>
@@ -52,9 +87,9 @@
             <div class="hours">
                 <h6>Restaurant Hours:</h6>
                 <p>Friday to Monday from 11:30am - 4pm </p>
-             </div>
-            <h6>Follow Us</h6>
+            </div>
             <div class="media-icons">
+                <h6>Follow Us</h6>
                 <img src="./resources/images/facebook.png" alt="Facebook social media icon">
                 <img src="./resources/images/instagram.png" alt="Instagram social media icon">
                 <img src="./resources/images/tripadvisor.png" alt="Tripadvisor social media icon">
@@ -86,6 +121,24 @@
             </div>            
         </div>
     </footer>
+    
+    <!-- Footer Mobile/tablet -->
+    <section class="footer-mobile">
+        <div class="links">
+            <a href="newsletter.html">Join Our Newsletter</a>
+            <a href="shipping.html">Shipping</a>
+            <a href="distributors.html">Distributors</a>            
+        </div>
+        <div class="social-media">
+            <h6>Follow Us</h6>
+                <img src="./resources/images/facebook.png" alt="Facebook social media icon">
+                <img src="./resources/images/instagram.png" alt="Instagram social media icon">
+                <img src="./resources/images/tripadvisor.png" alt="Tripadvisor social media icon">
+        </div>
+        <div class="licence">
+            <a href="license.html"><p>Black estate limited licence - Expiry 28 November 2023</p></a>
+        </div>
+    </section>
 
 
     

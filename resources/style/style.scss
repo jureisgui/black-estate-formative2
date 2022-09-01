@@ -406,9 +406,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Biryani&family=Calistoga&display=swap');
 
 .heading-dark{
-  @include heading-dark();
+  font-family: 'Calistoga', cursive;
+  @include heading-dark();  
 }
-
 
 /* BACKGROUND */
 body{
@@ -711,26 +711,6 @@ h6{
     text-align: center;
 }
 
-/* VINEYARD LANDING */
-.vineyards-landing{
-    height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.164),rgba(0, 0, 0, 0.275)) ,url("../images/vineyards.jpg");
-    background-size: cover;
-    background-position: top right;
-    position: relative;
-    display: flex;
-    align-items: center;
-}
-
-.vineyard-text-wrapper{
-    position: absolute;
-    display: inherit;
-    align-items: center;
-    // margin: 0.5em;
-    align-content: center;
-    justify-content: center; 
-}
-
 /* SHOP LAYOUT */
 
 .shop-landing-image{
@@ -779,10 +759,11 @@ h6{
 
 .shop-grid{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 2px; 
   max-width: 1500px;
   margin: auto;
+  padding: 1em;
   }
 
 .shop-element{
@@ -791,14 +772,21 @@ h6{
 }
 
 .wine-shop-image{
-  width: 300px;
-  height: 450px;
+  width: 110px;
+  height: 245px;
   object-fit: contain;
+  margin: auto;
+}
+
+.wine-icon{
+  width: 45px;
+  height: 40px;
 }
 
 .shop-image-wrapper{
   display: flex;
-  align-items: flex-end;
+  align-items:baseline;
+  justify-content: center;
 }
 
 .shop-image-wrapper img{
@@ -832,18 +820,54 @@ h3{
  input#quantity{
   width: 40px;
   height: 30px;
-  border-radius: 10px;
-  
+  border-radius: 10px;  
 }
 
-input#quantity::hover{
-  width: 40px;
-  height: 30px;
-  border-radius: 10px;
-  
+input#quantity:hover{  
+  border-color: #9F7703; 
 }
-  
 
+// input#quantity:active{  
+//   border-color: #9F7703; 
+// }
+
+/* VINEYARD LANDING */
+.vineyards-landing{
+  height: 70vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.164),rgba(0, 0, 0, 0.275)) ,url("../images/vineyards.jpg");
+  background-size: cover;
+  background-position: top right;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.vineyard-text-wrapper{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  // align-items: center;
+  // align-content: center;
+  // justify-content: center; 
+}
+
+.vineyard-text-wrapper > h1{
+  font-family: 'Calistoga', cursive;
+  @include heading-light();  
+  text-align: center;
+}
+
+.vineyard-landing-button > button{
+  margin: 0.3em;
+}
+
+.vineyard-text-wrapper > h2{
+  @include heading-light();
+}
 
 
 @media screen and (max-width: 1120px) {
@@ -903,6 +927,10 @@ input#quantity::hover{
   #menuToggle a:hover{
       border-bottom: 3px solid #121113;
   }
+
+  #menuToggle a:active{
+    border-bottom: 3px solid #121113;
+}
 
   #menuToggle input{
       display: block;
@@ -1023,7 +1051,7 @@ input#quantity::hover{
 // LANDING PAGE SECTION
 
 
-  // TWO COLLUMNS RESPONSIVENESS
+// TWO COLLUMNS RESPONSIVENESS
   .two-columns{
       flex-direction: column;
   }
@@ -1034,4 +1062,47 @@ input#quantity::hover{
   .img-wrapper{
       overflow: hidden;
   }
+
+// SHOP LAYOUT
+  .shop-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2px; 
+    max-width: 1500px;
+    margin: auto;
+    padding: 1em;
+    }
+}
+
+@media screen and (max-width: 920px) {
+  /* FONTS */
+  h1{
+    font-size: 20px;
+  }
+
+  p{
+    font-size: 16px;;
+  }
+
+  // SHOP LAYOUT
+  .shop-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2px; 
+    max-width: 1500px;
+    margin: auto;
+    padding: 1em;
+  }
+
+  .wine-shop-image{
+    width: 90px;
+    height: 245px;
+    object-fit: contain;
+    margin: auto;
+  }
+
+  input#quantity{
+      text-align: center;
+      margin: 0.5em;
+    }
 }
