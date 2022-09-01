@@ -383,8 +383,7 @@
 @mixin button{
   background-color: #C59407;
   color: #F1F5F2;
-  border: 2px solid #9F7703;
-  border-radius: 15px;
+  border-radius: 6px;
   font-family: 'Calistoga', cursive;
   font-size: 1.1em;
   padding: 0.5em 2em;
@@ -519,15 +518,16 @@ h6{
     margin: auto;
 }
 
-.input{
+.newsletter > input{
     margin: 0.2em;
     padding: 0.5em;
+    border-radius: 10px;
 }
 
 .newsletter{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 0.3em;
+    padding: 0.3em;  
 }
 
 .email{
@@ -1065,12 +1065,10 @@ input#quantity:hover{
 
 // SHOP LAYOUT
   .shop-grid{
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 2px; 
     max-width: 1500px;
     margin: auto;
-    padding: 1em;
     }
 }
 
@@ -1086,12 +1084,10 @@ input#quantity:hover{
 
   // SHOP LAYOUT
   .shop-grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 2px; 
-    max-width: 1500px;
-    margin: auto;
-    padding: 1em;
+    grid-template-columns: 1fr;
+    max-width: 920px;
+    margin: 0 auto;
+
   }
 
   .wine-shop-image{
