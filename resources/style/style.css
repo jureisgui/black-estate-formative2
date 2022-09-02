@@ -956,6 +956,26 @@ input#quantity:hover {
   margin: auto;
 }
 
+.soil-map h2 {
+  text-align: center;
+  font-family: "Calistoga", cursive;
+  font-size: 2.3em;
+  font-weight: 400;
+  color: #14281D;
+}
+
+.soil-map-image {
+  margin: auto;
+  text-align: center;
+  padding: 2em;
+  padding-top: 0;
+}
+
+.soil-map-image img {
+  width: 100%;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.144);
+}
+
 @media screen and (max-width: 1120px) {
   /* FONTS */
   h1 {
@@ -1015,7 +1035,6 @@ input#quantity:hover {
     position: absolute;
     top: -7px;
     left: -5px;
-    cursor: pointer;
     opacity: 0; /* hide this */
     z-index: 2; /* and place it over the hamburger */
     -webkit-touch-callout: none;
